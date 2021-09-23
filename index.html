@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        body {background-color:black;}
+        #gallery {
+            display: grid;
+            grid-auto-rows: 84px;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(auto-fit, 84px);
+        }
+
+        .wide {
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+
+        .tall {
+            grid-row: span 4;
+            grid-column: span 3;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery-bundle.css" />    
+</head>
+<body>
+    <div id="gallery">
+        <a class="wide" href="media/Image from iOS (1).jpg">
+            <img src="thumbs/Image from iOS (1).jpg" />
+        </a>
+        <a class="tall" href="media/Image from iOS.jpg">
+            <img src="thumbs/Image from iOS.jpg" />
+        </a>
+        <a class="wide"href="media/Image from iOS (6).jpg">
+            <img src="thumbs/Image from iOS (6).jpg" />
+        </a>
+        <a class="tall" href="media/IMG_20191017_162909.jpg">
+            <img src="thumbs/IMG_20191017_162909.jpg" />
+        </a>
+        <a class="wide" href="media/Image from iOS (7).jpg">
+            <img src="thumbs/Image from iOS (7).jpg" />
+        </a>
+    </div>
+
+    <script src="lightGallery/lightgallery.min.js"></script>
+    <script src="lightGallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="lightGallery/plugins/zoom/lg-zoom.min.js"></script>
+
+    <script type="text/javascript">
+    (function() {
+        lightGallery(document.getElementById('gallery'), {
+            plugins: [lgZoom, lgThumbnail],
+            thumbnail: true,
+            width: "100%",
+            escKey: false,
+            licenseKey: 'your_license_key',
+            speed: 500,
+        });
+    })();
+    </script>
+</body>
+</html>
