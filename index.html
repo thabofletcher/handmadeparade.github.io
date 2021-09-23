@@ -5,12 +5,12 @@
         body {background-color:black;}
         #gallery {
             display: grid;
-            grid-auto-rows: 84px;
+            grid-auto-rows: 80px;
             grid-auto-flow: dense;
-            grid-template-columns: repeat(auto-fit, 84px);
+            grid-template-columns: repeat(auto-fit, 80px);
         }
 
-        .wide {
+        /* .wide {
             grid-column: span 4;
             grid-row: span 3;
         }
@@ -18,26 +18,59 @@
         .tall {
             grid-row: span 4;
             grid-column: span 3;
+        } */
+
+        .wide {
+            grid-column: span 6;
+            grid-row: span 4;
+        }
+
+        .tall {
+            grid-row: span 6;
+            grid-column: span 4;
         }
     </style>
     <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery-bundle.css" />    
 </head>
 <body>
     <div id="gallery">
-        <a class="wide" href="media/Image from iOS (1).jpg">
-            <img src="thumbs/Image from iOS (1).jpg" />
+        <!-- 
+        <a class="" href="media">
+            <img src="thumbs" />
+        </a> 
+        -->
+        <a class="tall" href="media/DSC_0276.jpg">
+            <img src="thumbs/DSC_0276.jpg" />
         </a>
-        <a class="tall" href="media/Image from iOS.jpg">
-            <img src="thumbs/Image from iOS.jpg" />
+        <a class="tall" href="media/DSC_1492.JPG">
+            <img src="thumbs/DSC_1492.JPG" />
         </a>
-        <a class="wide"href="media/Image from iOS (6).jpg">
-            <img src="thumbs/Image from iOS (6).jpg" />
+        <a class="wide" href="media/DSC_1501.JPG">
+            <img src="thumbs/DSC_1501.JPG" />
         </a>
-        <a class="tall" href="media/IMG_20191017_162909.jpg">
-            <img src="thumbs/IMG_20191017_162909.jpg" />
+        <a class="wide" href="media/DSC_1515.JPG">
+            <img src="thumbs/DSC_1515.JPG" />
         </a>
-        <a class="wide" href="media/Image from iOS (7).jpg">
-            <img src="thumbs/Image from iOS (7).jpg" />
+        <a class="wide" href="media/DSC_1559.JPG">
+            <img src="thumbs/DSC_1559.JPG" />
+        </a>
+        <a class="wide" href="media/IMG_3978.jpg">
+            <img src="thumbs/IMG_3978.jpg" />        
+        </a>
+        <a class="wide" href="media/IMG_4011.jpg">
+            <img src="thumbs/IMG_4011.jpg" />
+        </a>
+        <a class="wide" href="media/IMG_4017.jpg">
+            <img src="thumbs/IMG_4017.jpg" />
+        </a>
+        <a class="tall" href="media/IMG_5236.jpg">
+            <img src="thumbs/IMG_5236.jpg" />
+        </a>
+        <a class="wide" href="media/spacepirate.jpg">
+            <img src="thumbs/spacepirate.jpg" />
+        </a>
+        <a class="wide" href="media/zac_hmp.jpg">
+            <img src="thumbs/zac_hmp.jpg" />
         </a>
     </div>
 
