@@ -8,21 +8,90 @@
 
         body {
             background-color:black;
-            color: beige;
-            font-family: 'Montserrat', sans-serif;
+            color: tan;
+            font-family: 'Space Grotesk', sans-serif;
             margin: 20px;
             }
-        h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 400;
-            font-size: 32px;
+        h1,h2,h3 {        
+            font-family: 'Montserrat', sans-serif;
+            margin: .3em;
+            /* font-weight: 400;
+            font-size: 32px; */
         }
+        
         #gallery {
             display: grid;
             grid-auto-rows: 80px;
             grid-auto-flow: dense;
             grid-template-columns: repeat(auto-fit, 80px);
-            margin-top: 40px;
+        }
+
+        nav {
+            display: grid;
+            font-family: 'Montserrat', sans-serif;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 1em;
+            align-items: center;
+            text-align: center;
+            background: black;
+            }
+
+        @media screen and (max-width: 900px) {
+            nav {
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                grid-gap: 1em;
+            }
+        }
+
+        div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        footer {
+            margin-top: 80px;
+        }
+
+        .center {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .left {
+            margin: 40px;
+        }
+
+        .one {
+            grid-column: 1;
+        }
+
+        .two {
+            grid-column: 2;
+        }
+
+        .logo {
+            grid-column: 3;
+        }
+
+        .three {
+            grid-column: 4;
+        }
+
+
+        .navLinks {
+            text-decoration: none;
+            height: 3em;
+            color: chocolate;
+        }
+
+        .navLinks:hover {
+            color: orangered;
+            border-left: 1px solid orangered;
+            border-right: 1px solid orangered;
+            padding: 1em 1em;
         }
 
         /* .wide {
@@ -48,9 +117,31 @@
 </head>
 <body>
 
-    <h1>Handmade Parade</h1>
+    <div class="center">
+    <h1>The Handmade Parade</h1>
+    <h3>a community performance of</h3>
+    <h2>Costumes & Creations</h2>
+    </div>
 
-    <div>A celebration of costumes in Tuolumne County</div>
+    <header>
+        <nav class="container">
+        <div class="one">
+            <a href="#about" class="navLinks">about</a>
+        </div>
+        <div class="two">
+        <a href="#rules" class="navLinks">rules & prizes</a>
+        </div>
+        <div class="logo">
+        <a href="#gallery" class="navLinks">gallery</a>
+        </div>
+        <div class="three">
+        <a href="https://forms.gle/wjQw3qwYN5kyxgpY6" target="_blank" class="navLinks">entry form</a>
+        </div>
+
+        </nav>
+      </header>
+
+    <div>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lore</div>
 
     <div id="gallery">
         <!-- 
@@ -92,6 +183,10 @@
             <img src="thumbs/zac_hmp.jpg" />
         </a>
     </div>
+
+    <footer>
+    <div class="center">a celebration of costumes in Tuolumne County</div>
+    </footer>
 
     <script src="lightGallery/lightgallery.min.js"></script>
     <script src="lightGallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
