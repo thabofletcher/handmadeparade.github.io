@@ -1,13 +1,28 @@
 <!doctype html>
 <html>
 <head>
+    <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery-bundle.css" />
+
     <style>
-        body {background-color:black;}
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk&display=swap');
+
+        body {
+            background-color:black;
+            color: beige;
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px;
+            }
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 32px;
+        }
         #gallery {
             display: grid;
             grid-auto-rows: 80px;
             grid-auto-flow: dense;
             grid-template-columns: repeat(auto-fit, 80px);
+            margin-top: 40px;
         }
 
         /* .wide {
@@ -30,9 +45,13 @@
             grid-column: span 4;
         }
     </style>
-    <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery-bundle.css" />    
 </head>
 <body>
+
+    <h1>Handmade Parade</h1>
+
+    <div>A celebration of costumes in Tuolumne County</div>
+
     <div id="gallery">
         <!-- 
         <a class="" href="media">
