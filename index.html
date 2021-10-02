@@ -6,16 +6,52 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk&display=swap');
 
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
         body {
             background-color:black;
             color: tan;
             font-family: 'Space Grotesk', sans-serif;
             margin: 20px;
+            line-height: 1;
             }
 
         h1,h2,h3 {        
             font-family: 'Montserrat', sans-serif;
-            margin: .3em;
         }
         
         #gallery {
@@ -24,6 +60,12 @@
             grid-auto-rows: 80px;
             grid-auto-flow: dense;
             grid-template-columns: repeat(auto-fit, 80px);
+            margin-top: 2em;
+        }
+
+        header {
+            margin-top: 2em;
+            margin-bottom: 2em;
         }
 
         nav {
@@ -46,20 +88,19 @@
         }
 
         #about {
-            margin-top: 60px;
+            margin-top: 3rem;
+        }
+
+        #rules {
+            margin-top: 1rem;
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 2em;
         }
 
         .center {
-            margin: 20px;
             text-align: center;
-        }
-
-        .left {
-            margin: 40px;
         }
 
         .one {
@@ -90,13 +131,6 @@
             padding: 1em 1em;
         }
 
-        .chunk {
-            margin-top: 4px;
-            margin-right: 10px;
-            grid-column: span 6;
-            grid-row: span 2;            
-        }
-
         .wide {
             grid-column: span 3;
             grid-row: span 2;
@@ -117,7 +151,7 @@
     </div>
 
     <header>
-        <nav class="container">
+        <nav>
             <div class="one">
                 <a href="#about" class="navLinks">about</a>
             </div>
@@ -131,10 +165,12 @@
                 <a href="https://forms.gle/wjQw3qwYN5kyxgpY6" target="_blank" class="navLinks">entry form</a>
             </div>
         </nav>
-      </header>
+    </header>
 
     <div>
         <p>Because of public health and safety concerns, we have decided to reschedule our in-person art parade and festival to the Spring of 2022! Check back here for the new date soon.</p>
+
+        So instead of an in-person parade this fall, we are holding an ONLINE PARADE and CONTEST. We are now accepting photographic or video entries from October 1st through midnight on Oct. 31st. Best costume and creation will be chosen by our TCA judges. Work must be original. Check our RULES & PRIZES page for more details. Click on the <a href="https://forms.gle/wjQw3qwYN5kyxgpY6" target="_blank">ENTRY FORM</a> to get started with your entry!
     </div>
 
     <div id="gallery">
@@ -143,9 +179,6 @@
             <img src="thumbs" />
         </a> 
         -->
-        <div class="chunk">
-            So instead of an in-person parade this fall, we are holding an ONLINE PARADE and CONTEST. We are now accepting photographic or video entries from October 1st through midnight on Oct. 31st. Best costume and creation will be chosen by our TCA judges. Work must be original. Check our RULES & PRIZES page for more details. Click on the <a href="https://forms.gle/wjQw3qwYN5kyxgpY6" target="_blank">ENTRY FORM</a> to get started with your entry!
-        </div>
         <a class="tall" href="media/DSC_0276.jpg">
             <img src="thumbs/DSC_0276.jpg" />
         </a>
@@ -206,7 +239,9 @@
             <li>Entries must be 3 dimensional, wearable, or mobile/paradable</li>
             <li>All work must be submitted between October 1, 2021 and midnight October 31, 2021</li>
             <li>Winners will be notified by email in Novemeber</li>
-            <h3>check back soon for prize pack announcements!</h3>
+            <p>
+                <h3>check back soon for prize pack announcements!</h3>
+            </p>    
         </ul>
     </div>
 
